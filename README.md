@@ -1,20 +1,30 @@
-# PhoenixWebpack
+# Webpack Integration for Phoenix Framework 1.2
 
-To start your Phoenix app:
+### A webpack integration for Phoenix 1.2. 
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-  * Install Node.js dependencies with `npm install`
-  * Start Phoenix endpoint with `mix phoenix.server`
+Includes an original untouched phoenix 1.2 install as initial commit, then the modifications needed to run webpack as second commit, so you can spot the differences.
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Mostly inspired from the blog post [using-webpack-with-phoenix-and-elixir](http://matthewlehner.net/using-webpack-with-phoenix-and-elixir/), but modified slightly in the following ways:
 
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
+## Installation
 
-## Learn more
+Clone this repository
 
-  * Official website: http://www.phoenixframework.org/
-  * Guides: http://phoenixframework.org/docs/overview
-  * Docs: http://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
+Then:
+
+    mix deps.get
+
+    npm install
+
+    mix phoenix.server
+
+
+### File loader
+
+Due to trouble with loading the fonts included from ```web/static/css/app.css``` included with phoenix, the webpack file-loader was added to simply copy the fonts into the static folder in the priv dir. 
+
+Also, the bootstrap fonts were added to ```web/static/fonts``` and are also included here.
+
+### Simplification of paths
+
+The paths in webpack.config.js were changed slightly. 
