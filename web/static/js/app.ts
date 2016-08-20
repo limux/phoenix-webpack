@@ -13,6 +13,19 @@
 // to also remove its path from "config.paths.watched".
 import "phoenix_html"
 
+// Silly Typescript code to prove it works...
+
+class Car {
+  constructor(protected brand: string) {}
+
+  getBrand() {
+    return this.brand;
+  }
+}
+
+let car = new Car("BMW");
+console.log("The car is a " + car.getBrand());
+
 // Import local files
 //
 // Local files can be imported directly using relative
