@@ -1,4 +1,4 @@
-## Webpack and Typescript integration for Phoenix Framework 1.2.
+# Webpack and Typescript template for Phoenix Framework 1.2.
 
 Includes an original untouched phoenix 1.2 install as initial commit, then the modifications needed to run webpack and typescript as second commit, so you can spot the differences.
 
