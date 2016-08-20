@@ -1,6 +1,4 @@
-# Webpack and Typescript Integration for Phoenix Framework 1.2
-
-### A webpack and typescript integration for Phoenix Framework 1.2.
+## Webpack and Typescript integration for Phoenix Framework 1.2.
 
 Includes an original untouched phoenix 1.2 install as initial commit, then the modifications needed to run webpack and typescript as second commit, so you can spot the differences.
 
@@ -35,4 +33,4 @@ The paths in webpack.config.js were changed slightly.
 
 ### Addition of Typescript
 
-This is done in package.json and in the webpack configuration.
+This is done in package.json and in the webpack configuration, as well as in web/static/js/app.ts
