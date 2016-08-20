@@ -1,12 +1,10 @@
-# Webpack Integration for Phoenix Framework 1.2
-
-### A webpack integration for Phoenix 1.2.
+# Webpack template for Phoenix Framework 1.2
 
 Includes an original untouched phoenix 1.2 install as initial commit, then the modifications needed to run webpack as second commit, so you can spot the differences.
 
 It includes live reloading of both views, templates and static assets, just as the standard Phoenix configuration.
 
-In a short while I will add Typescript to the project as well.
+Check out the branch typescript for a typescript build version.
 
 ## Installation
 
